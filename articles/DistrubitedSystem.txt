@@ -1,0 +1,99 @@
+[
+  {
+    "type": "h4",
+    "text": "What Are Heartbeats in Distributed Systems?"
+  },
+  {
+    "type": "p5",
+    "text": "In distributed systems, heartbeats are tiny signals sent regularly between components to check if they're alive and functioning. Think of them as periodic pings that say, 'I’m still running!'"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Help monitor the health of services in a distributed system.",
+      "Enable quick detection of failures and trigger recovery actions.",
+      "Improve reliability by reducing downtime and preventing unnoticed crashes."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "Why Are Heartbeats Important?"
+  },
+  {
+    "type": "ol",
+    "text": [
+      "They let one service know if another is active and healthy.",
+      "Missed heartbeats can indicate system issues or failures.",
+      "Enable systems to reroute tasks or notify admins automatically."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "How Heartbeats Work"
+  },
+  {
+    "type": "p5",
+    "text": "Heartbeats involve two main parts: the sender (which sends out the heartbeat signal) and the receiver (which listens and checks for missed beats)."
+  },
+  {
+    "type": "ol",
+    "text": [
+      "The sender transmits heartbeat messages at set intervals (e.g., every 30 seconds).",
+      "The receiver logs each heartbeat and marks the sender as 'active'.",
+      "If a message isn’t received in time, the sender is flagged as 'unavailable'."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "Things to Consider When Designing Heartbeats"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Frequency: Send heartbeats often enough to detect failures quickly, but not so often that it overloads the network.",
+      "Timeouts: Choose a reasonable time to wait before deciding a node is down.",
+      "Payloads: Heartbeats can include extra data like system load or version numbers."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "Types of Heartbeat Mechanisms"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Push Heartbeats: Nodes send updates to the monitor automatically.",
+      "Pull Heartbeats: The monitor checks in with nodes at intervals."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "Challenges with Heartbeats"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Network Overhead: Too many heartbeats can slow down the network.",
+      "False Alarms: Poor settings may mark healthy nodes as failed.",
+      "Resource Usage: Monitoring takes up system resources.",
+      "Split-Brain Situations: Partitioned networks may wrongly assume other parts are down."
+    ]
+  },
+  {
+    "type": "h5",
+    "text": "Real-World Use Cases"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Database Clusters: Used to sync and failover between primary and replicas.",
+      "Kubernetes: Nodes send heartbeats to the control plane for scheduling decisions.",
+      "Elasticsearch: Uses heartbeats in a gossip network to detect node failures."
+    ]
+  },
+  {
+    "type": "p5",
+    "text": "Heartbeats may be invisible, but they are critical to the health of distributed systems, ensuring everything ticks in sync behind the scenes."
+  }
+]
+
