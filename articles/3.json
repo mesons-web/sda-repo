@@ -1,0 +1,106 @@
+[
+  {
+    "type": "h3",
+    "text": "How PayPal Scaled to 1 Billion Transactions per Day Using Just 8 Virtual Machines"
+  },
+  {
+    "type": "p5",
+    "text": "In 1998, a group of engineers in California set out to create security software for handheld devices. When their original business model faltered, they pivoted and founded what the world now knows as PayPal."
+  },
+  {
+    "type": "p5",
+    "text": "As PayPal's user base rapidly expanded, their initial strategy to scale involved purchasing newer, faster hardware. However, the slowing of Moore's Law meant hardware improvements could no longer keep pace with their needs."
+  },
+  {
+    "type": "img",
+    "text": "Illustration showing the slowdown of Moore's Law over time"
+  },
+  {
+    "type": "p5",
+    "text": "By the early 2000s, PayPal was processing over a million transactions daily. To handle the growth, they shifted to horizontal scaling, deploying services across more than 1,000 virtual machines."
+  },
+  {
+    "type": "h4",
+    "text": "Challenges with Horizontal Scaling"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Network Infrastructure: Increased server count led to more network hops, causing higher latency and operational costs.",
+      "Maintenance Costs: Managing deployments, autoscaling, and monitoring across thousands of machines became cumbersome.",
+      "Resource Wastage: Many servers were underutilized, leading to inefficient CPU use and unnecessary expenses."
+    ]
+  },
+  {
+    "type": "img",
+    "text": "Diagram showing increased complexity with more servers"
+  },
+  {
+    "type": "h4",
+    "text": "The Actor Model: A Game-Changer"
+  },
+  {
+    "type": "p5",
+    "text": "To solve the inefficiencies of horizontal scaling, PayPal adopted the Actor Model using the Akka Framework in Java. This shift allowed them to achieve extreme scalability, supporting a billion transactions per day with just 8 virtual machines."
+  },
+  {
+    "type": "h5",
+    "text": "Key Benefits of the Actor Model"
+  },
+  {
+    "type": "ul",
+    "text": [
+      "Lightweight Concurrency: Actors are lightweight and require fewer resources than traditional threads, enabling millions of concurrent actors.",
+      "Efficient Resource Usage: Threads are assigned only when an actor needs to process a message, maximizing CPU utilization.",
+      "Isolation of State: Each actor maintains private state and communicates via immutable messages, reducing the need for distributed caches.",
+      "Improved Concurrency: Actors process messages sequentially but operate asynchronously, making concurrency management simpler.",
+      "Enhanced Fault Tolerance: Supervisor actors monitor others and can restart failed actors gracefully without system-wide disruptions."
+    ]
+  },
+  {
+    "type": "img",
+    "text": "Diagram showing actors sending and processing messages"
+  },
+  {
+    "type": "h5",
+    "text": "How the Actor Model Works at PayPal"
+  },
+  {
+    "type": "ol",
+    "text": [
+      "Actors perform actions only when they receive messages, staying idle otherwise.",
+      "Threads are dynamically assigned to actors during message processing and released afterward.",
+      "State is kept local within the actor, minimizing database queries and improving latency.",
+      "Consistent hashing routes customer requests to the same server, optimizing caching efficiency."
+    ]
+  },
+  {
+    "type": "img",
+    "text": "Illustration showing consistent hashing and actor-based architecture"
+  },
+  {
+    "type": "p5",
+    "text": "PayPal's implementation of the Actor Model combined with functional programming practices (to prevent side effects) further enhanced scalability and ease of testing."
+  },
+  {
+    "type": "h4",
+    "text": "Limitations and Considerations"
+  },
+  {
+    "type": "p5",
+    "text": "While powerful, the Actor Model isn't a universal solution. Developers face a learning curve, and caution is needed to prevent issues like race conditions and deadlocks."
+  },
+  {
+    "type": "p5",
+    "text": "Despite these challenges, the Actor Model allowed PayPal to massively optimize resource usage and scalability, turning a daunting infrastructure problem into a streamlined, efficient system."
+  },
+  {
+    "type": "h4",
+    "text": "Conclusion"
+  },
+  {
+    "type": "p5",
+    "text": "PayPal's evolution from hardware scaling to adopting the Actor Model showcases a masterclass in handling explosive growth with technical elegance and minimal resources."
+  }
+]
+
