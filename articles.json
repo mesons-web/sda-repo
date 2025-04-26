@@ -16,5 +16,11 @@
     "title": "How PayPal Supported a Billion Transactions Daily With Only 8 Virtual Machines",
     "path": "articles/3.json",
     "summary": "PayPal achieved extreme scalability by adopting the actor model using the Akka framework, allowing them to process a billion transactions per day with just 8 VMs, while tackling issues like network latency, resource wastage, and fault tolerance."
+  },
+  {
+    "id": 4,
+    "title": "10 Essential System Design Topics and Concepts",
+    "path": "articles/4.json",
+    "summary": "This article covers ten fundamental system design concepts, including scalability, fault tolerance, data storage, caching, messaging systems, microservices, security, performance optimization, design patterns, and trade-offs, providing a comprehensive guide to building robust and scalable systems."
   }
 ]

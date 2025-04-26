@@ -1,0 +1,99 @@
+[
+  {
+    "type": "h4",
+    "text": "10 Essential System Design Topics and Concepts"
+  },
+  {
+    "type": "p5",
+    "text": "Mastering these ten system design concepts will set you apart by demonstrating expertise in creating robust, scalable, and reliable systems."
+  },
+  {
+    "type": "h5",
+    "text": "1. Scalability"
+  },
+  {
+    "type": "p5",
+    "text": "Scalability ensures a system can handle increasing loads without performance loss. Understanding horizontal and vertical scaling, load balancing, and distributed systems is fundamental for building scalable architectures."
+  },
+  {
+    "type": "h5",
+    "text": "2. Availability and Fault Tolerance"
+  },
+  {
+    "type": "p5",
+    "text": "Designing fault-tolerant systems ensures services remain available during failures. Key concepts include replication, redundancy, failover strategies, backups, checkpoints, and error handling. Active-active and active-passive architectures are commonly used."
+  },
+  {
+    "type": "h5",
+    "text": "3. Data Storage and Databases"
+  },
+  {
+    "type": "p5",
+    "text": "Different applications require appropriate data storage solutions. Knowledge of relational databases, NoSQL databases, key-value stores, and columnar databases, along with their strengths and limitations, is essential."
+  },
+  {
+    "type": "h5",
+    "text": "4. Caching"
+  },
+  {
+    "type": "p5",
+    "text": "Caching improves performance by keeping frequently accessed data close to users. It is important to understand caching strategies, eviction policies, cache hit and miss, and maintaining cache coherence."
+  },
+  {
+    "type": "h5",
+    "text": "5. Message Queues and Event-driven Architecture"
+  },
+  {
+    "type": "p5",
+    "text": "Message queues enable asynchronous communication between system components. Understanding publish-subscribe patterns, message brokers, and event-driven architectures helps build loosely coupled and highly scalable systems."
+  },
+  {
+    "type": "h5",
+    "text": "6. System APIs and Microservices"
+  },
+  {
+    "type": "p5",
+    "text": "Microservices architecture structures applications as a collection of small, independent services. Designing efficient APIs, enabling service discovery, managing inter-service communication, and handling dependencies are key skills."
+  },
+  {
+    "type": "h5",
+    "text": "7. Security"
+  },
+  {
+    "type": "p5",
+    "text": "Security is a vital aspect of system design. Essential topics include authentication, authorization, encryption methods, secure communication protocols, and safeguarding data both at rest and in transit."
+  },
+  {
+    "type": "h5",
+    "text": "8. System Performance Optimization"
+  },
+  {
+    "type": "p5",
+    "text": "Optimizing system performance is crucial for delivering smooth user experiences. Learning profiling, load testing, latency reduction techniques, database optimizations, and query performance tuning are important for improving system efficiency."
+  },
+  {
+    "type": "h5",
+    "text": "9. Design Patterns"
+  },
+  {
+    "type": "p5",
+    "text": "Design patterns provide reusable solutions to common problems. Familiarity with patterns like Singleton, Observer, Builder, Factory, as well as microservices patterns such as SAGA, CQRS, and Circuit Breaker, is important for scalable design."
+  },
+  {
+    "type": "h5",
+    "text": "10. Trade-offs and System Constraints"
+  },
+  {
+    "type": "p5",
+    "text": "Design decisions often require making trade-offs considering factors like cost, resource availability, and technical limitations. Understanding these constraints and making informed choices is key to building effective systems."
+  },
+  {
+    "type": "h4",
+    "text": "Conclusion"
+  },
+  {
+    "type": "p5",
+    "text": "Mastering these core system design concepts enhances the ability to create efficient, reliable, and scalable systems. Practical application of these concepts in real-world scenarios strengthens understanding and improves problem-solving skills."
+  }
+]
+
