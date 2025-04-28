@@ -1,0 +1,82 @@
+[
+    {
+      "type": "h4",
+      "text": "WhatsApp Engineering Practices for Extreme Scalability"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp adopted a focused and disciplined engineering approach to achieve extreme scalability while maintaining simplicity and reliability."
+    },
+    {
+      "type": "h5",
+      "text": "1. Single Responsibility Principle"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp focused solely on its core feature—messaging—eliminating any feature creep to maintain simplicity and reliability. They avoided building advertising networks or social media features, concentrating only on high-quality messaging."
+    },
+    {
+      "type": "h5",
+      "text": "2. Technology Stack"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp used Erlang for its server-side development, benefiting from Erlang's lightweight thread model, hot code loading, and built-in scalability. Hot loading allowed deploying updates without downtime, significantly boosting availability."
+    },
+    {
+      "type": "h5",
+      "text": "3. Why Reinvent the Wheel?"
+    },
+    {
+      "type": "p5",
+      "text": "Instead of building from scratch, WhatsApp leveraged existing open-source technologies like ejabberd, a real-time messaging server written in Erlang. They modified and optimized its core components to meet their specific performance needs, and used third-party services such as Google Push for notifications."
+    },
+    {
+      "type": "h5",
+      "text": "4. Cross-Cutting Concerns"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp emphasized cross-cutting concerns like monitoring, alerting, continuous integration, and continuous delivery to maintain high product quality and ensure that all parts of the system operated cohesively."
+    },
+    {
+      "type": "h5",
+      "text": "5. Scalability"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp implemented diagonal scaling—a combination of horizontal and vertical scaling—to balance cost and performance. Servers ran on FreeBSD with kernel tuning to handle millions of concurrent connections and to maintain operational reliability even under traffic spikes."
+    },
+    {
+      "type": "h5",
+      "text": "6. Flywheel Effect"
+    },
+    {
+      "type": "p5",
+      "text": "Continuous measurement of metrics like CPU usage, context switches, and system calls enabled WhatsApp to detect and eliminate bottlenecks proactively. Regular feedback cycles helped in constant system performance improvement."
+    },
+    {
+      "type": "h5",
+      "text": "7. Quality"
+    },
+    {
+      "type": "p5",
+      "text": "Load testing was critical to identify and fix potential points of failure. WhatsApp used artificial traffic and DNS configuration changes to simulate real-world scenarios and stress test their systems before production."
+    },
+    {
+      "type": "h5",
+      "text": "8. Small Team Size"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp maintained a small engineering team, reducing communication overhead and boosting productivity. With just 32 engineers, they managed to scale to serve millions of users efficiently by relying on smart engineering and powerful tools."
+    },
+    {
+      "type": "h4",
+      "text": "Conclusion"
+    },
+    {
+      "type": "p5",
+      "text": "WhatsApp’s engineering success came from strict adherence to simplicity, smart use of existing technology, proactive performance tuning, and a strong emphasis on reliability. These practices allowed them to handle massive scale with minimal resources while maintaining exceptional service quality."
+    }
+  ]

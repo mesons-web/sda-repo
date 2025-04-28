@@ -1,0 +1,107 @@
+[
+  {
+    "type": "h4",
+    "text": "A Brief History of Scaling Netflix"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix began as a monolithic application with a single Oracle database, which was a major single point of failure. A database corruption in 2008 highlighted the need for a new architecture, prompting Netflix to move to AWS and adopt microservices."
+  },
+  {
+    "type": "h5",
+    "text": "The Architectural Origins of Netflix"
+  },
+  {
+    "type": "p5",
+    "text": "Initially, Netflix ran a monolithic application with a monolithic Oracle database. This setup led to significant risks, culminating in a major database corruption event that halted operations for three days."
+  },
+  {
+    "type": "h5",
+    "text": "The Shift to AWS and Microservices"
+  },
+  {
+    "type": "p5",
+    "text": "Post-outage, Netflix moved its data to AWS and transitioned to microservices. AWS provided scalability without the need to manage physical data centers, enabling Netflix to focus on delivering high-quality video streaming."
+  },
+  {
+    "type": "h5",
+    "text": "Guiding Principles During Transition"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix adopted key principles: prefer open-source solutions, build only when necessary, design stateless services, prioritize horizontal scaling over vertical scaling, build redundancy and isolation, and automate destructive testing with tools like Chaos Monkey."
+  },
+  {
+    "type": "h5",
+    "text": "The Three Main Parts of Netflix Architecture"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix architecture is divided into three parts: the Client (user-facing apps), the Backend (services running on AWS), and the Content Delivery Network (Open Connect), with Netflix maintaining control over the entire stack."
+  },
+  {
+    "type": "h5",
+    "text": "Scaling the Netflix Content Delivery Network (CDN)"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix scaled its CDN by iteratively improving its strategy: starting with a small internal CDN, using third-party CDNs, and finally launching Open Connect, a proprietary CDN designed for high performance and global scalability."
+  },
+  {
+    "type": "h5",
+    "text": "Iteration 1 - Small CDN"
+  },
+  {
+    "type": "p5",
+    "text": "Initially, Netflix built its own CDN across five U.S. locations, each storing all content to support increasing streaming demands."
+  },
+  {
+    "type": "h5",
+    "text": "Iteration 2 - Third-Party CDN"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix later switched to third-party CDNs to reduce operational overhead and focus on improving client applications, enabling smart switching between CDNs for better user experience."
+  },
+  {
+    "type": "h5",
+    "text": "Iteration 3 - Open Connect"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix launched Open Connect in 2012, building custom Open Connect Appliances (OCAs) for optimized video delivery, achieving better scalability, control, quality, and reduced costs."
+  },
+  {
+    "type": "h5",
+    "text": "Scaling the Netflix Edge"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix scaled its Edge architecture to handle massive client request volumes efficiently by progressively evolving from a simple three-tier model to a more sophisticated microservices setup."
+  },
+  {
+    "type": "h5",
+    "text": "Early Edge Architecture"
+  },
+  {
+    "type": "p5",
+    "text": "The early design was a basic three-tier architecture with a client, an API (NCCP), and a database. This approach focused on simplicity and time-to-market."
+  },
+  {
+    "type": "h5",
+    "text": "Growth Phase of Netflix Architecture"
+  },
+  {
+    "type": "p5",
+    "text": "As Netflix grew, the monolithic NCCP app was broken down into microservices, with the API handling orchestration among services to maintain engineering velocity and support feature growth."
+  },
+  {
+    "type": "h4",
+    "text": "Conclusion"
+  },
+  {
+    "type": "p5",
+    "text": "Netflix’s journey from a monolithic setup to a highly scalable, microservices-based cloud architecture provides key lessons on handling growth, ensuring system resilience, and focusing on core competencies."
+  }
+]
+

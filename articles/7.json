@@ -1,0 +1,91 @@
+[
+  {
+    "type": "h4",
+    "text": "Capturing A Billion Emo(j)i-ons"
+  },
+  {
+    "type": "p5",
+    "text": "At Hotstar, we strive to build features that enhance the viewing experience. One of the most engaging features we created was the interactive Social Feed, and in this article, we explore how we built it from a technical perspective."
+  },
+  {
+    "type": "h5",
+    "text": "The Challenge of Real-time Emoji Swarms"
+  },
+  {
+    "type": "p5",
+    "text": "Emojis provide real-time feedback on the mood of the audience, and this feature required collecting billions of user-generated emoji submissions during events like cricket tournaments. The challenge was to process and display these in real-time."
+  },
+  {
+    "type": "h5",
+    "text": "Moving from a Third-Party Service to In-House Solution"
+  },
+  {
+    "type": "p5",
+    "text": "Initially, Hotstar used a third-party service for this feature, but it lacked the desired performance and cost efficiency. Hence, we decided to bring the feature in-house."
+  },
+  {
+    "type": "h5",
+    "text": "Key Design Principles"
+  },
+  {
+    "type": "p5",
+    "text": "Several principles guided the architecture of the emoji system, focusing on scalability, system decomposition, and asynchronous processing."
+  },
+  {
+    "type": "h5",
+    "text": "Scalability"
+  },
+  {
+    "type": "p5",
+    "text": "We ensured that the system was horizontally scalable to handle increasing traffic by using load balancers and configuring auto-scaling to dynamically adjust resources."
+  },
+  {
+    "type": "h5",
+    "text": "Decomposition"
+  },
+  {
+    "type": "p5",
+    "text": "The system was broken down into smaller, independent components, allowing each to scale independently as needed."
+  },
+  {
+    "type": "h5",
+    "text": "Asynchronous Processing"
+  },
+  {
+    "type": "p5",
+    "text": "Asynchronous processing was essential to handle concurrent tasks without blocking resources, enabling us to scale up and handle the massive number of emoji submissions efficiently."
+  },
+  {
+    "type": "h5",
+    "text": "Implementation Details"
+  },
+  {
+    "type": "p5",
+    "text": "The emoji submissions were processed through HTTP APIs. To manage the load, we used Kafka as a message queue for high throughput and low latency. We implemented the asynchronous approach using Golang’s Goroutines for efficient message handling."
+  },
+  {
+    "type": "h5",
+    "text": "Processing with Spark"
+  },
+  {
+    "type": "p5",
+    "text": "We used Apache Spark for micro-batching and real-time aggregation of emoji data, allowing us to compute and deliver the most popular emojis in near real-time."
+  },
+  {
+    "type": "h5",
+    "text": "Data Delivery and Client Interaction"
+  },
+  {
+    "type": "p5",
+    "text": "We used Hotstar’s PubSub system to deliver messages in real-time, ensuring that users received the top emojis quickly and efficiently. Clients received these messages and displayed the animations on the user interface."
+  },
+  {
+    "type": "h4",
+    "text": "Conclusion"
+  },
+  {
+    "type": "p5",
+    "text": "The Emojis feature at Hotstar showcases how a scalable and efficient architecture can be built to handle real-time data streams. The success of this feature paved the way for similar functionalities like Voting, enhancing user engagement during live events."
+  }
+]
+

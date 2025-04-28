@@ -22,5 +22,23 @@
     "title": "10 Essential System Design Topics and Concepts",
     "path": "articles/4.json",
     "summary": "This article covers ten fundamental system design concepts, including scalability, fault tolerance, data storage, caching, messaging systems, microservices, security, performance optimization, design patterns, and trade-offs, providing a comprehensive guide to building robust and scalable systems."
+  },
+  {
+    "id": 5,
+    "title": "WhatsApp Engineering Practices for Extreme Scalability",
+    "path": "articles/5.json",
+    "summary": "WhatsApp achieved extreme scalability by focusing on core messaging, leveraging Erlang and existing open-source technologies, implementing diagonal scaling, maintaining a small team, and emphasizing performance monitoring and load testing."
+  },
+  {
+    "id": "6",
+    "title": "A Brief History of Scaling Netflix",
+    "path": "articles/6.json",
+    "summary": "Explore how Netflix evolved from a monolithic architecture to a global microservices giant by migrating to AWS, building its own CDN (Open Connect), and scaling backend, APIs, and edge systems to meet massive user demands."
+  },
+  {
+    "id": 7,
+    "title": "Capturing A Billion Emo(j)i-ons",
+    "path": "articles/7.json",
+    "summary": "This article discusses the technical architecture behind Hotstar's interactive Social Feed feature, focusing on how the system processes billions of emoji submissions during live events like cricket tournaments. It covers the system’s scalability, decomposition, and asynchronous processing, and explores the use of Kafka and Spark for efficient data handling and real-time delivery."
   }
 ]
